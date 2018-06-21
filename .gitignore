@@ -102,3 +102,11 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# intellij files
+.idea
+
+# pdf reuslt folder
+_PDF输出结果
+_temp.html
+_temp.css

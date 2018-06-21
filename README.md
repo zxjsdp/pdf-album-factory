@@ -1,2 +1,6 @@
 # pdf-album-factory
-Generate beautiful PDF format albums by images and texts.
+
+根据图片及内容，批量生成漂亮的 PDF 格式相册文件。
+
+
+
