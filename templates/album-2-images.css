@@ -1,5 +1,5 @@
 body {
-    font-family: "Helvetica", "Aria", serif;
+    font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
     color: #333;
     margin: 0;
 }
@@ -49,14 +49,12 @@ div.content-container {
 
 div.text-block {
     display: table-cell;
-    font-family: "Helvetica", "Aria", serif;
     font-size: 2em;
     line-height: 1.5;
     padding: 25px 100px 20px 100px;
 }
 
 div.intro-title {
-    font-family: "Helvetica", "Aria", serif;
     font-size: 3em;
     text-align: right;
     padding: 40px 0;
@@ -64,7 +62,6 @@ div.intro-title {
 }
 
 div.intro-content {
-    font-family: "Helvetica", "Aria", serif;
     font-size: 2em;
     line-height: 1.5;
     text-align: left;
