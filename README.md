@@ -4,11 +4,6 @@
 
 效果图（点击可查看大图）：
 
- 左页面-正文 3 图片示例            |  右页面-正文 3 图片示例 | 左页面-正文 2 图片示例 |  右页面-正文 2 图片示例
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![左页面-正文 3 图片示例](http://zxjsdp1.qiniudn.com/pdf-album-factory-001.png)  |  ![右页面-正文 3 图片示例](http://zxjsdp1.qiniudn.com/pdf-album-factory-002.png) |  ![左页面-正文 2 图片示例](http://zxjsdp1.qiniudn.com/pdf-album-factory-003.png) |  ![右页面-正文 2 图片示例](http://zxjsdp1.qiniudn.com/pdf-album-factory-004.png)
-
-
 <p float="left">
   <a href="http://zxjsdp1.qiniudn.com/pdf-album-factory-001.png" title="左页面-正文 3 图片示例">
     <img src="http://zxjsdp1.qiniudn.com/pdf-album-factory-001.png"
