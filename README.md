@@ -2,6 +2,47 @@
 
 根据图片及内容，批量生成漂亮的 PDF 格式相册文件。
 
+效果图：
+
+<ul style="ul {padding: 0;}">
+    <li style="float: left; padding: 1em; list-style: none;">
+        <a style="text-decoration: none;"
+           href="http://zxjsdp1.qiniudn.com/pdf-album-factory-001.png"
+           title="左页面-正文 3 图片示例">
+            <img style="width: 424px; height: 300px;"
+                 src="http://zxjsdp1.qiniudn.com/pdf-album-factory-001.png"
+                 alt="左页面-正文 3 图片示例"/>
+        </a>
+    </li>
+    <li style="float: left; padding: 1em; list-style: none;">
+        <a style="text-decoration: none;"
+           href="http://zxjsdp1.qiniudn.com/pdf-album-factory-002.png"
+           title="右页面-正文 3 图片示例">
+            <img style="width: 424px; height: 300px;"
+                 src="http://zxjsdp1.qiniudn.com/pdf-album-factory-002.png"
+                 alt="右页面-正文 3 图片示例"/>
+        </a>
+    </li>
+    <li style="float: left; padding: 1em; list-style: none;">
+        <a style="text-decoration: none;"
+           href="http://zxjsdp1.qiniudn.com/pdf-album-factory-003.png"
+           title="左页面-正文 2 图片示例">
+            <img style="width: 424px; height: 300px;"
+                 src="http://zxjsdp1.qiniudn.com/pdf-album-factory-003.png"
+                 alt="左页面-正文 2 图片示例""/>
+        </a>
+    </li>
+    <li style="float: left; padding: 1em; list-style: none;">
+        <a style="text-decoration: none;"
+           href="http://zxjsdp1.qiniudn.com/pdf-album-factory-004.png"
+           title="右页面-正文 2 图片示例">
+            <img style="width: 424px; height: 300px;"
+                 src="http://zxjsdp1.qiniudn.com/pdf-album-factory-004.png"
+                 alt="右页面-正文 2 图片示例"/>
+        </a>
+    </li>
+</ul>
+
 # 使用方法
 
 ## 第一步：安装 Python3
