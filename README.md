@@ -9,6 +9,29 @@
 ![左页面-正文 3 图片示例](http://zxjsdp1.qiniudn.com/pdf-album-factory-001.png)  |  ![右页面-正文 3 图片示例](http://zxjsdp1.qiniudn.com/pdf-album-factory-002.png) |  ![左页面-正文 2 图片示例](http://zxjsdp1.qiniudn.com/pdf-album-factory-003.png) |  ![右页面-正文 2 图片示例](http://zxjsdp1.qiniudn.com/pdf-album-factory-004.png)
 
 
+<p float="left">
+  <a href="http://zxjsdp1.qiniudn.com/pdf-album-factory-001.png" title="左页面-正文 3 图片示例">
+    <img src="http://zxjsdp1.qiniudn.com/pdf-album-factory-001.png"
+         alt="左页面-正文 3 图片示例"
+         width="24%" />
+  </a>
+  <a href="http://zxjsdp1.qiniudn.com/pdf-album-factory-002.png" title="右页面-正文 3 图片示例">
+    <img src="http://zxjsdp1.qiniudn.com/pdf-album-factory-002.png"
+         alt="右页面-正文 3 图片示例"
+         width="24%" />
+  </a>
+  <a href="http://zxjsdp1.qiniudn.com/pdf-album-factory-003.png" title="左页面-正文 2 图片示例">
+    <img src="http://zxjsdp1.qiniudn.com/pdf-album-factory-003.png"
+         alt="左页面-正文 2 图片示例"
+         width="24%" />
+  </a>
+  <a href="http://zxjsdp1.qiniudn.com/pdf-album-factory-004.png" title="左页面-正文 2 图片示例">
+    <img src="http://zxjsdp1.qiniudn.com/pdf-album-factory-004.png"
+         alt="左页面-正文 2 图片示例"
+         width="24%" />
+  </a>
+</p>
+
 # 使用方法
 
 ## 第一步：安装 Python3
