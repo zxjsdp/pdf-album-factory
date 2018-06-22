@@ -4,11 +4,11 @@
 
 # 使用方法
 
-## 第一步：安装 Python
+## 第一步：安装 Python3
 
-若您使用的是 Windows，则可能并没有安装过 Python。请前往 <https://www.python.org/downloads/windows/> 下载并安装，建议使用 3.6 以上的版本。
+若您使用的是 Windows，则可能并没有安装过 Python3。请前往 <https://www.python.org/downloads/windows/> 下载并安装，建议使用 3.6 以上的版本。
 
-若您使用的是 Linux / macOS，则应该已有预置的 Python 环境。
+若您使用的是 Linux / macOS，则应该已有预置的 Python 环境。请检查是否为 Python3 版本。
 
 ## 第二步：安装 wkhtmltopdf
 
@@ -16,14 +16,24 @@ Wkhtmltopdf 是可用于将 HTML 转换为 PDF 的开源工具，GitHub 链接�
 
 可前往 <https://wkhtmltopdf.org/downloads.html> 下载您所在平台对应的安装包，并进行安装。
 
-## 第三步：安装所依赖的 Python 包
+## 第三步：准备项目及安装 Python 包依赖
 
-1. 在命令行窗口中，切换路径至 `pdf-album-factory` 目录下。
-2. 执行 pip 命令，安装 requirements.txt 中的所有 Python 包（建议使用 virtualenv）
+1. 克隆项目至本地
+
+    - 使用 git 将项目克隆至本地：`git@github.com:zxjsdp/pdf-album-factory.git`。
+    - 若不熟悉 git 或仅想快速使用，也可直接下载最新 master 分支版本文件：<https://github.com/zxjsdp/pdf-album-factory/archive/master.zip>。
+    
+2. 切换至工作目录
+
+    可通过文件管理器进入下载的 `pdf-album-factory` 文件夹后，按住 shift 同时点击右键，选择 “在此处打开命令行窗口”。
+    
+3. 安装 Python 包依赖
+
+    执行 pip 命令，安装 requirements.txt 中的所有 Python package（建议使用 virtualenv）
 
         pip install -r requirements.txt
 
-其中需要特别关注的两个包分别为：
+### 其中需要特别关注的两个包分别为：
 
 1. openpyxl
 
@@ -33,17 +43,16 @@ Wkhtmltopdf 是可用于将 HTML 转换为 PDF 的开源工具，GitHub 链接�
 
     wkhtmltopdf 的 Python 封装包，用户将 HTML 转换为 PDF。文档可参考：[GitHub - JazzCore/python-pdfkit](https://github.com/JazzCore/python-pdfkit)。
     
-
 ## 第四步：修改模板文件及准备图片
 
-默认的模板文件名为 `相册数据模板.xlsx`。请按照需求修改模板文件，并将需要加入到相册中的图片信息准确的填写在模板文件中。
+默认的模板文件名为 `相册数据模板.xlsx`，请按照需求修改模板文件。
 
 ## 第五步：
 
-执行生成逻辑（建议在 virtualenv 中执行）：
+执行 PDF 生成逻辑（建议在 virtualenv 中执行）：
 
-    python generate_pdf_album.pdf
+    python generate_pdf_album.py
 
-注意：
+### 注意
 
 在使用此工具的流程中，请不要随意修改任何文件的相对路径，避免找不到对应文件的情况。
