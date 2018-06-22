@@ -5,23 +5,23 @@
 效果图（点击可查看大图）：
 
 <p float="left">
-  <a href="http://zxjsdp1.qiniudn.com/pdf-album-factory-001.png" title="左页面-正文 3 图片示例">
-    <img src="http://zxjsdp1.qiniudn.com/pdf-album-factory-001.png"
+  <a href="http://zxjsdp1.qiniudn.com/pdf-album-factory-001-squashed.jpg" title="左页面-正文 3 图片示例" target='_blank'>
+    <img src="http://zxjsdp1.qiniudn.com/pdf-album-factory-001-squashed.jpg"
          alt="左页面-正文 3 图片示例"
          width="24%" />
   </a>
-  <a href="http://zxjsdp1.qiniudn.com/pdf-album-factory-002.png" title="右页面-正文 3 图片示例">
-    <img src="http://zxjsdp1.qiniudn.com/pdf-album-factory-002.png"
+  <a href="http://zxjsdp1.qiniudn.com/pdf-album-factory-002-squashed.jpg" title="右页面-正文 3 图片示例" target='_blank'>
+    <img src="http://zxjsdp1.qiniudn.com/pdf-album-factory-002-squashed.jpg"
          alt="右页面-正文 3 图片示例"
          width="24%" />
   </a>
-  <a href="http://zxjsdp1.qiniudn.com/pdf-album-factory-003.png" title="左页面-正文 2 图片示例">
-    <img src="http://zxjsdp1.qiniudn.com/pdf-album-factory-003.png"
+  <a href="http://zxjsdp1.qiniudn.com/pdf-album-factory-003-squashed.jpg" title="左页面-正文 2 图片示例" target='_blank'>
+    <img src="http://zxjsdp1.qiniudn.com/pdf-album-factory-003-squashed.jpg"
          alt="左页面-正文 2 图片示例"
          width="24%" />
   </a>
-  <a href="http://zxjsdp1.qiniudn.com/pdf-album-factory-004.png" title="左页面-正文 2 图片示例">
-    <img src="http://zxjsdp1.qiniudn.com/pdf-album-factory-004.png"
+  <a href="http://zxjsdp1.qiniudn.com/pdf-album-factory-004-squashed.jpg" title="左页面-正文 2 图片示例" target='_blank'>
+    <img src="http://zxjsdp1.qiniudn.com/pdf-album-factory-004-squashed.jpg"
          alt="左页面-正文 2 图片示例"
          width="24%" />
   </a>
