@@ -83,17 +83,29 @@ def prepare_template_cache():
 
     global template_cache
 
-    with open(join_path(TEMPLATE_FOLDER, TEMPLATE_HTML_LEFT_2_IMAGES)) as template_left_2_html:
+    with open(join_path(TEMPLATE_FOLDER, TEMPLATE_HTML_LEFT_2_IMAGES),
+              encoding='utf-8',
+              mode='r') as template_left_2_html:
         template_cache[TEMPLATE_HTML_LEFT_2_IMAGES] = template_left_2_html.read()
-    with open(join_path(TEMPLATE_FOLDER, TEMPLATE_HTML_LEFT_3_IMAGES)) as template_left_3_html:
+    with open(join_path(TEMPLATE_FOLDER, TEMPLATE_HTML_LEFT_3_IMAGES),
+              encoding='utf-8',
+              mode='r') as template_left_3_html:
         template_cache[TEMPLATE_HTML_LEFT_3_IMAGES] = template_left_3_html.read()
-    with open(join_path(TEMPLATE_FOLDER, TEMPLATE_HTML_RIGHT_2_IMAGES)) as template_right_2_html:
+    with open(join_path(TEMPLATE_FOLDER, TEMPLATE_HTML_RIGHT_2_IMAGES),
+              encoding='utf-8',
+              mode='r') as template_right_2_html:
         template_cache[TEMPLATE_HTML_RIGHT_2_IMAGES] = template_right_2_html.read()
-    with open(join_path(TEMPLATE_FOLDER, TEMPLATE_HTML_RIGHT_3_IMAGES)) as template_right_3_html:
+    with open(join_path(TEMPLATE_FOLDER, TEMPLATE_HTML_RIGHT_3_IMAGES),
+              encoding='utf-8',
+              mode='r') as template_right_3_html:
         template_cache[TEMPLATE_HTML_RIGHT_3_IMAGES] = template_right_3_html.read()
-    with open(join_path(TEMPLATE_FOLDER, TEMPLATE_CSS_2_IMAGES)) as template_2_css:
+    with open(join_path(TEMPLATE_FOLDER, TEMPLATE_CSS_2_IMAGES),
+              encoding='utf-8',
+              mode='r') as template_2_css:
         template_cache[TEMPLATE_CSS_2_IMAGES] = template_2_css.read()
-    with open(join_path(TEMPLATE_FOLDER, TEMPLATE_CSS_3_IMAGES)) as template_3_css:
+    with open(join_path(TEMPLATE_FOLDER, TEMPLATE_CSS_3_IMAGES),
+              encoding='utf-8',
+              mode='r') as template_3_css:
         template_cache[TEMPLATE_CSS_3_IMAGES] = template_3_css.read()
 
 
@@ -224,9 +236,9 @@ def generate_html_by_templates(xlsx):
             .replace(PLACEHOLDER_INTRO_BACKGROUND_COLOR_RIGHT, intro_background_color) \
             .replace(PLACEHOLDER_CONTENT_BACKGROUND_COLOR_RIGHT, content_background_color)
 
-        with open(TEMP_HTML_FILE, 'w') as f:
+        with open(TEMP_HTML_FILE, encoding='utf-8', mode='w') as f:
             f.write(html_content)
-        with open(TEMP_CSS_FILE, 'w') as f:
+        with open(TEMP_CSS_FILE, encoding='utf-8', mode='w') as f:
             f.write(css_content)
 
         result_file_path = os.path.join(RESULT_FOLDER, RESULT_PDF_NAME_TEMPLATE % (i + 1))
