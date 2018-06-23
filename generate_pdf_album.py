@@ -5,21 +5,32 @@ import sys
 import pdfkit
 import openpyxl
 
+if sys.version[0] == '2':
+    raise EnvironmentError('Only Python3 supported!')
+
 # =========================================================================================
 # 这些选项可修改
 # -----------------------------------------------------------------------------------------
+
 # 输出结果路径及文件名前缀
 RESULT_FOLDER = '_PDF输出结果'
 RESULT_PDF_NAME_TEMPLATE = '相册结果_%03d.pdf'
 
 # 模板文件名
 TEMPLATE_XLSX_FILE = '相册数据模板.xlsx'
+
+# Windows 下 wkhtmltopdf.exe 的默认路径
+WKHTMLTOPDF_PATH = 'C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltopdf.exe'
+
 # =========================================================================================
 
 
 # =========================================================================================
 # 这些选项若您不知道代表什么含义，请不要随意修改
 # -----------------------------------------------------------------------------------------
+
+RUNNING_ON_WINDOWS = sys.platform == 'win32'  # 检查当前是否在 Windows 上运行
+
 # 默认标题栏，处理时文件的标题栏需要完全对应
 DEFAULT_HEADER_CONTENT = [
     '名字', '学号', 'QQ 号', '微信号', '图片路径（资料图）', '图片路径（正文图片一）', '图片路径（正文图片二）',
@@ -195,7 +206,7 @@ def choose_target_template(row):
 
 
 def generate_html_by_templates(xlsx):
-    """基于模板生成 PDF"""
+    """基于模板填充内容至 HTML 及 CSS 文件"""
     if not os.path.isdir(RESULT_FOLDER):
         os.mkdir(RESULT_FOLDER)
 
@@ -242,9 +253,21 @@ def generate_html_by_templates(xlsx):
             f.write(css_content)
 
         result_file_path = os.path.join(RESULT_FOLDER, RESULT_PDF_NAME_TEMPLATE % (i + 1))
+
+        call_wkhtmltopdf(result_file_path)
+
+
+def call_wkhtmltopdf(result_file_path):
+    """调用 wkhtmltopdf 根据填充内容后的 HTML 及 CSS 文件，生成最终的 PDF 文件"""
+    if RUNNING_ON_WINDOWS:
+        # Windows 下常有 wkhtmltopdf.exe 不在环境变量中的问题，因此直接指定绝对路径配置
+        wkhtmltopdf_config = pdfkit.configuration(wkhtmltopdf=WKHTMLTOPDF_PATH)
+        pdfkit.from_file(TEMP_HTML_FILE, result_file_path,
+                         options=OPTIONS, configuration=wkhtmltopdf_config)
+    else:
         pdfkit.from_file(TEMP_HTML_FILE, result_file_path, options=OPTIONS)
 
-        print('<< 已生成 PDF 文件：' + result_file_path)
+    print('<< 已生成 PDF 文件：' + result_file_path + '\n')
 
 
 def do_cleaning():
