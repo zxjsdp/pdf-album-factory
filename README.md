@@ -47,12 +47,15 @@ Wkhtmltopdf 是用于将 HTML 转换为 PDF 的开源工具，可前往 <https:/
 
 1. 克隆项目至本地
 
-    - 使用 git 将项目克隆至本地：`git@github.com:zxjsdp/pdf-album-factory.git`。
-    - 若不熟悉 git 或仅想快速使用，也可直接下载最新 master 分支版本文件：<https://github.com/zxjsdp/pdf-album-factory/archive/master.zip>。
+    使用 git 将项目克隆至本地：`git@github.com:zxjsdp/pdf-album-factory.git`。
+
+    若不熟悉 git 或仅想快速使用，也可直接下载最新 master 分支版本文件：<https://github.com/zxjsdp/pdf-album-factory/archive/master.zip>。
     
 2. 切换至工作目录
 
-    可通过文件管理器进入下载的 `pdf-album-factory` 文件夹后，按住 shift 同时点击右键，选择 “在此处打开命令行窗口”。
+    对于 Linux / macOS 用户，使用 Terminal 工具切换至 `pdf-album-factory` 目录下。
+
+    对于 Windows 用户，可通过文件管理器进入下载的 `pdf-album-factory` 文件夹后，按住 shift 同时点击右键，选择 “在此处打开命令行窗口”。
     
 3. 安装 Python 包依赖
 
@@ -68,19 +71,23 @@ Wkhtmltopdf 是用于将 HTML 转换为 PDF 的开源工具，可前往 <https:/
 
 2. pdfkit
 
-    wkhtmltopdf 的 Python 封装包，用于将 HTML 转换为 PDF。文档可参考：[GitHub - JazzCore/python-pdfkit](https://github.com/JazzCore/python-pdfkit)。
+    Wkhtmltopdf 的 Python wrapper，用于将 HTML 转换为 PDF。文档可参考：[GitHub - JazzCore/python-pdfkit](https://github.com/JazzCore/python-pdfkit)。
     
 ### 第四步：修改模板文件及准备图片
 
-默认的模板文件名为 `相册数据模板.xlsx`，请按照需求修改模板文件。
+默认的模板文件名为 `相册数据模板.xlsx`，请按照模板文件中示例的格式进行修改，一行记录会生成一页 PDF。
+
+若仅想快速尝试一下本工具，也可直接使用已有的模板文件而无需修改。
 
 ### 第五步：执行生成命令
 
-执行 PDF 生成逻辑（建议在 virtualenv 中执行）：
+运行 Python 脚本以执行 HTML 模板内容替换及后续的 PDF 生成逻辑（建议在 virtualenv 中执行）：
 
     python generate_pdf_album.py
 
-## 常见错误类型
+也可以在文件管理器中直接双击运行（不建议，若出错则无法看到错误信息）。
+
+## 常见错误类型及解决思路
 
 1. > "No wkhtmltopdf executable found"
 
