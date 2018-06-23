@@ -55,11 +55,11 @@ Wkhtmltopdf 是用于将 HTML 转换为 PDF 的开源工具，可前往 <https:/
 
     对于 Linux / macOS 用户，使用 Terminal 工具切换至 `pdf-album-factory` 目录下。
 
-    对于 Windows 用户，可通过文件管理器进入下载的 `pdf-album-factory` 文件夹后，按住 shift 同时点击右键，选择 “在此处打开命令行窗口”。
+    对于 Windows 用户，可通过文件管理器进入下载的 `pdf-album-factory` 文件夹后，按住 shift 同时点击右键，选择 “在此处打开命令行窗口” 或 “在此处打开 PowerShell 窗口”。
     
 3. 安装 Python 包依赖
 
-    执行 pip 命令，安装 requirements.txt 中的所有 Python package（建议使用 virtualenv）
+    执行 pip 命令，安装 requirements.txt 中的所有 Python package（建议新建 virtualenv）
 
         pip install -r requirements.txt
 
@@ -81,7 +81,7 @@ Wkhtmltopdf 是用于将 HTML 转换为 PDF 的开源工具，可前往 <https:/
 
 ### 第五步：执行生成命令
 
-运行 Python 脚本以执行 HTML 模板内容替换及后续的 PDF 生成逻辑（建议在 virtualenv 中执行）：
+运行 Python 脚本以执行 HTML 模板内容替换及后续的 PDF 生成逻辑（建议在 virtualenv 环境中执行）：
 
     python generate_pdf_album.py
 
